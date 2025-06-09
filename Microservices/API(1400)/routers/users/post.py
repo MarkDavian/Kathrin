@@ -13,7 +13,7 @@ async def create_user_avatar(syncId: int, file: UploadFile):
     """
     {
         'status': 'OK',
-        'resutl': str (filename)
+        'result': str (filename)
     }
     """
     file_bytes = await file.read()
