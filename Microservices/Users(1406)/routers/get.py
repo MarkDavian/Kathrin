@@ -23,7 +23,7 @@ async def get_all_users():
 async def get_users_with_params(*, skip: int, limit: int):
     _, result = await db.get_documents(skip=skip, limit=limit)
     return {
-        'statuts': 'OK',
+        'status': 'OK',
         'result': result
     }
 
